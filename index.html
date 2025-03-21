@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trophée Presse Citron/BnF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="icon" type="image/png" href="./images/favicon-vide.png"/>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <!-- Conteneur principal qui occupe toute la hauteur -->
+    <div class="container-fluid main-container d-flex flex-column min-vh-100 p-0">
+        <header class="navbar fixed-top navbar-expand-lg navbar-light bg-custom px-1">
+            <div class="container">
+                <!-- Bouton hamburger -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" style="background-color: transparent; border: none;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu de navigation centré -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#presentation">Présentation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#actualites">Actualités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#archives">Archives</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./professionnels.html">Dessins Pro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./etudiants.html">Dessins Étudiants</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./yuzu.html">Dessins Yuzu</a></li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/pressecitronbnf/">
+                                <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" 
+                                     viewBox="0 0 156.22 155.77" width="30" height="30">
+                                    <path d="m78.09,155.74c-10.32,0-20.65.09-30.97-.01C20.88,155.47.55,135.43.21,109.17
+                                             c-.27-20.48-.28-40.97-.04-61.45C.48,19.98,20.75.15,48.59.05c19.65-.07,39.3-.08,58.95,0
+                                             c28.68.12,48.7,20.28,48.68,48.88-.01,19.15,0,38.3,0,57.45-.03,29.39-19.89,49.33-49.15,49.34
+                                             -9.66,0-19.32,0-28.98,0Zm.1-14.69c9.99,0,19.98.05,29.98-.01c19.6-.13,33.31-13.83,33.37-33.38
+                                             .05-19.82.06-39.64,0-59.45-.06-19.57-13.83-33.37-33.36-33.44-19.82-.07-39.64-.05-59.45,0
+                                             c-20.18.05-33.78,13.65-33.85,33.94-.07,19.65-.05,39.3,0,58.95.04,19.62,13.67,33.26,33.35,33.38
+                                             9.99.06,19.98.01,29.98.01Z" 
+                                          style="fill: #3c0d9c; stroke-width: 0px;"></path>
+                                    <path d="m40.5,77.45c.18-21.02,17.38-37.93,38.45-37.81,21.35.12,38.4,17.27,38.31,38.53
+                                             -.09,21.11-17.66,38.39-38.78,38.14-21.26-.25-38.16-17.55-37.98-38.87Zm13.78.7
+                                             c.14,13.45,11.34,24.5,24.66,24.36,13.44-.15,24.5-11.22,24.53-24.56
+                                             .03-13.55-11.38-24.75-24.98-24.51-13.57.24-24.35,11.24-24.21,24.71Z" 
+                                          style="fill: #3c0d9c; stroke-width: 0px;"></path>
+                                    <path d="m128.62,36.78c.12,5.07-3.91,9.23-8.99,9.3-5.15.06-9.17-3.92-9.17-9.08
+                                             0-4.91,3.75-8.82,8.7-9.06,4.98-.25,9.34,3.84,9.46,8.85Z"
+                                          style="fill: #3c0d9c; stroke-width: 0px;"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex-grow-1 d-flex">
+            <div class="background-fixed">
+                <!-- Fond fixe, optionnellement vide ou avec du contenu -->
+            </div>
+
+            <!-- Image en haut à gauche pour les versions responsives -->
+            <img src="./images/logo-responsive.png" class="img-responsive-top-left d-block d-md-none" alt="Image Responsive">
+
+                <div class="container-fluid">
+                <!-- Première ligne pour le contenu principal -->
+                    <div class="row">
+                        <!-- Colonne gauche pour l'image -->
+                        <div class="col-lg-3 col-md-4 d-none d-md-block sidebar">
+                            <img src="./images/titrex3.png" class="img-fluid" alt="Image Côté Gauche">
+                        </div>
+                    <!-- Colonne principale pour le contenu -->
+                        <div class="col-lg-7 col-md-8 col-sm-12 d-flex flex-column align-items-center">
+
+                        <div class="presentation container-fluid flex-column align-items-center justify-content-center my-4" id="presentation">
+                            <!-- <h1>Présentation</h1> -->
+                            <h3>
+                                À&nbsp;l’occasion de&nbsp;la&nbsp;Semaine de&nbsp;la&nbsp;Presse et des Médias, l’École&nbsp;Estienne organise, en&nbsp;partenariat avec&nbsp;la&nbsp;BnF, l’association Dessinez&nbsp;Créez Liberté et&nbsp;la&nbsp;Mairie du&nbsp;13<sup>e</sup> arrondissement, la&nbsp;nouvelle édition du&nbsp;Trophée&nbsp;Presse&nbsp;Citron/BnF. Ce&nbsp;double concours, ouvert aux&nbsp;étudiants et&nbsp;aux&nbsp;dessinateurs professionnels, a&nbsp;pour&nbsp;objectif de&nbsp;soutenir et&nbsp;de&nbsp;développer le&nbsp;dessin de&nbsp;presse et la liberté d'expression.
+                            </h3>
+                            <a class="btn btn-custom my-2" href="./media/dossier_de_presse_2025.pdf" target="_blank">DOSSIER DE PRESSE<!-- &nbsp;DU&nbsp;CONCOURS&nbsp;&Eacute;TUDIANTS --></a>
+                        </div>
+
+                        <!-- Section Agenda -->
+                        <div class="agenda container-fluid my-4 py-5" id="agenda">
+                            <h1>Agenda 2025</h1>
+                            <section class="row">
+                                <article class="column col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <h3>déroulement du concours</h3>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2>janvier, février, mars</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <p>ateliers de dessin de presse encadrés par des dessinateurs professionnels </p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2>31 janvier</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6 custom-spacing-x2">
+                                            <p>lancement des concours</p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2><span class="rayure">15</span> → 18 mars</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6 custom-spacing-x1">
+                                            <p>date limite d’envoi des dessins pour les concours</p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2>18 mars</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6 custom-spacing-x2">
+                                            <p>jury de présélection</p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2>19 - 25 mars</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6 custom-spacing-x2">
+                                            <p>vote en ligne</p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                </article>
+                
+                                <article class="column col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <h3>expositions et événements</h3>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2>à partir du 15 mars</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6 custom-spacing-x1">
+                                            <p>exposition de plein air sur la pelouse de l'École Estienne</p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2>18 - 28 mars</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <p>exposition « Dictature et caricature » Mairie du 13ᵉ, Galerie Bièvre</p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2>27 mars</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <p>remise des trophées<br>
+                                                 dans la salle des fêtes<br>
+                                                  de la Mairie du 13ᵉ</p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2>20 - 30 mars</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <p>exposition d'une sélection <br>
+                                                de dessins au Théâtre 13-Bibliothèque</p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                    <div class="row align-items-center">
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <h2>à partir du 28 mars</h2>
+                                        </article>
+                                        <article class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <p>exposition d'une sélection<br>
+                                                de dessins dans le foyer<br>
+                                                du Petit Auditorium de la BnF</p>
+                                        </article>
+                                    </div>
+                                    <hr>
+                                </article>
+                            </section>
+                        </div>
+
+                        <!-- Section Actualités -->
+                        <section id="actualites" class="container-fluid my-4 py-5">
+                            <h1 class="text-start mb-4">Actualités</h1>
+                            <p class="chapeau-texte">
+                              De nombreuses actions pédagogiques ont été menées, depuis janvier 2025, aussi bien à l’École Estienne qu’hors les murs, en liaison avec l’association Dessinez Créez Liberté et le collectif de jeunes dessinateurs MARGE. Il s’agit, à travers des rencontres, des apports théoriques et des ateliers encadrés par des dessinateurs professionnels, d’initier les étudiants à cet art exigeant qu’est le dessin de presse.
+                            </p>
+                            <div id="carouselActualites" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselActualites" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Actualité 1"></button>
+                                <button type="button" data-bs-target="#carouselActualites" data-bs-slide-to="1" aria-label="Actualité 2"></button>
+                                <button type="button" data-bs-target="#carouselActualites" data-bs-slide-to="2" aria-label="Actualité 3"></button>
+                                <button type="button" data-bs-target="#carouselActualites" data-bs-slide-to="3" aria-label="Actualité 4"></button>
+                                <button type="button" data-bs-target="#carouselActualites" data-bs-slide-to="4" aria-label="Actualité 5"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <!-- Actualité 1 -->
+                                <div class="carousel-item active">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                      <img src="./images/actu/commemo-Charlie.jpg" class="d-block w-100" alt="Actualité 1">
+                                    </div>
+                                    <div class="col-md-6 text-content">
+                                      <h5>14 janvier : hommage aux victimes de l’attentat de 2015 contre <em>Charlie Hebdo</em></h5>
+                                      <p>
+                                        Quelques-uns de ceux qui étaient présents à l’époque sont venus dans l’Amphi Charlie apporter leur témoignage, avec émotion, humour et tendresse. Ils ont souligné l’engagement de l’École Estienne et la singularité des actions menées par toute la communauté scolaire, dans les jours qui ont suivi le drame. Un montage de photos et de plusieurs films réalisés <em>in situ</em>, notamment par Antenne 2 (« Envoyé spécial ») et par Baptiste Drapeau, jeune cinéaste issu de l’école et de la Fémis, ont été projetés. Enfin, une plaque a été dévoilée, en présence du directeur et du rédacteur en chef adjoint de <em>Charlie</em>, en mémoire de Simon Fieschi, très gravement blessé lors de l’attentat, qui nous a quittés le 17 octobre 2024.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Actualité 2 -->
+                                <div class="carousel-item">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                      <img src="./images/actu/atelier-Mulatier.jpg" class="d-block w-100" alt="Actualité 2">
+                                    </div>
+                                    <div class="col-md-6 text-content">
+                                      <h5>Du 6 janvier au 10 mars : workshop sur le thème « dictature et caricature »</h5>
+                                      <p>La classe de DMA2 (illustrateurs/graveurs), sous la houlette de leur professeure Carole Appert, s’est essayée à cet exercice difficile. Les étudiants ont pu bénéficier des conseils du grand caricaturiste Jean Mulatier, co-créateur des « Grandes Gueules » ainsi que des apports plus techniques des jeunes dessinateurs du groupe MARGE, média dessiné. Une partie des productions sera exposée à la Mairie du 13ᵉ arrondissement, du 18 au 28 mars, dans le cadre de l’exposition éponyme.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Actualité 3 -->
+                                <div class="carousel-item">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                      <img src="./images/actu/atelier-Faujour.jpg" class="d-block w-100" alt="Actualité 3">
+                                    </div>
+                                    <div class="col-md-6 text-content">
+                                      <h5>Janvier/février : workshop sur le thème du <em>bashing</em> contre les fonctionnaires</h5>
+                                      <p>Les DGDSC 3 e année, qui avaient déjà, l’an dernier, croqué les droits des femmes, se sont frottés cette année à un sujet plus compliqué car, s’il est facile de moquer la prétendue fainéantise des cheminots-toujours-en-grève ou des profs-toujours en vacances, il est bien plus périlleux d’en prendre le contrepied ! Accompagnés par leur professeure Sophie Bourly , ils ont fait la connaissance de Loïc Faujour, dessinateur truculent et haut en couleurs : nous attendons avec impatience de découvrir leurs productions.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Actualité 4 -->
+                                <div class="carousel-item">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                      <img src="./images/actu/workshop-seville.jpg" class="d-block w-100" alt="Actualité 4">
+                                    </div>
+                                    <div class="col-md-6 text-content">
+                                      <h5>Du 9 au 12 février : workshop à Séville</h5>
+                                      <p>Les étudiants de DNMade 2 en design graphique numérique ont rejoint en Andalousie leurs homologues illustrateurs de <em>l’Escuela Superior de Arte y Diseño</em> de Séville pour un workshop autour du dessin de presse et de la participation au Trophée Presse Citron/BnF. Cette collaboration, conçue dans le cadre du Projet d’Établissement, favorise l’échange culturel, linguistique et pédagogique. Les participants ont exploré ensemble des pratiques créatives, le message, sans oublier le véhicule de l&#39;humour, renforçant ainsi les liens européens et l&#39;internationalisation des arts graphiques.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Actualité 5 -->
+                                <div class="carousel-item">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                      <img src="./images/actu/ptits-citrons.jpg" class="d-block w-100" alt="Actualité 5">
+                                    </div>
+                                    <div class="col-md-6 text-content">
+                                      <h5>Des nouvelles des P’tits Citrons</h5>
+                                      <p>Pour la sixième édition du projet P&#39;tits Citrons, mené par le service Éducation artistique et culturelle de la Bibliothèque nationale de France dans le cadre du Trophée Presse Citron/BnF, les élèves de CM2 de l&#39;école Château des Rentiers, de l’école Fagon et de l’école Glacière, écoles élémentaires du 13ᵉ arrondissement, ont eu l’occasion de s&#39;initier au dessin de presse grâce à l’expertise de la dessinatrice Agnès Lanchon. Pako, un jeune dessinateur talentueux, s’est joint à quelques étudiantes de l’École Estienne pour co-animer ces interventions.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselActualites" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselActualites" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                              </button>
+                            </div>
+                        </section>
+                        
+                        
+  
+
+                        
+                        <div class="container actus" id="archives">
+                            <h1 class="text-start mb-4">Archives</h1>
+                        <div class="archives">
+                            <h3 class="text-start archive-description">12 ans d'identités visuelles</h3>
+                            <div class="scrolling-wrapper">
+                                <div class="card">
+                                    <img src="./images/2025.jpg" class="img-archiv" alt="2025">
+                                    <h4 class="text-center year">2025</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2024.jpg" class="img-archiv" alt="2024">
+                                    <h4 class="text-center year">2024</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2023.jpg" class="img-archiv" alt="2023">
+                                    <h4 class="text-center year">2023</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2022.jpg" class="img-archiv" alt="2022">
+                                    <h4 class="text-center year">2022</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2021.jpg" class="img-archiv" alt="2021">
+                                    <h4 class="text-center year">2021</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2020.jpg" class="img-archiv" alt="2020">
+                                    <h4 class="text-center year">2020</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2019.jpg" class="img-archiv" alt="2019">
+                                    <h4 class="text-center year">2019</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2018.jpg" class="img-archiv" alt="2018">
+                                    <h4 class="text-center year">2018</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2017.jpg" class="img-archiv" alt="2017">
+                                    <h4 class="text-center year">2017</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2016.jpg" class="img-archiv" alt="2016">
+                                    <h4 class="text-center year">2016</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2015.jpg" class="img-archiv" alt="2015">
+                                    <h4 class="text-center year">2015</h4>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="./images/2014.jpg" class="img-archiv" alt="2014">
+                                    <h4 class="text-center year">2014</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="http://www.pressecitron.org/citronnade/" class="text-decoration-none text-reset">
+                            <div class="row my-4 py-5 align-items-start">
+                                <div class="col-12 col-md-6">
+                                    <h2 class="text-start citronnade">Citronnade :</h2>
+                                    <h2 class="text-start citronnade2">30 ans de Presse Citron</h2>
+                                    <p>
+                                        Pour célébrer dignement notre trentième anniversaire, nous avons fouillé dans nos archives, retrouvé les piliers de cette belle aventure et réalisé cet album mémoriel. <em>Citronnade</em> : un produit DSAA DSC pur jus !
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <img src="./images/citronnade.png" alt="Image à droite" class="img-fluid">
+                                </div>
+                            </div>
+                          </a>                          
+                        <div class="carousel-wrapper">
+                            <div id="carouselExample" class="carousel carousel slide">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                              </div>
+                              <div class="carousel-inner w-100" height="100">
+                                <div class="carousel-item active">
+                                    <div class="row align-items-start justify-content-center">
+                                      <div class="caption col-12 col-md-12 col-lg-6">
+                                        <h3 class="text-start article">2024 : retour sur la 31ᵉ édition</h3>
+                                        <a href="./article-1.html" class="no-underline">                                            
+                                            <p>
+                                                Trophée catégorie Professionnels
+                                                <br>BearBOZ, blog personnel, 02/01/2024
+                                          </p>
+                                            <p class="fw-bold text-primary" style="font-size: 1rem;">
+                                                pour en savoir plus : cliquez ici
+                                            </p>
+                                        </a>
+                                      </div>
+                                      <div class="col-12 col-md-12 col-lg-6">
+                                        <a href="./article-1.html">
+                                          <img src="./images/articles/1-BeRBOZ-le-dessin.jpg" alt="BeARBOZ, l’ours des Beaux-Arts" class="img-fluid">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Deuxième élément du carrousel -->
+                                  <div class="carousel-item" data-bs-interval="10000">
+                                    <div class="row align-items-start justify-content-center">
+                                      <div class="caption col-12 col-md-12 col-lg-6">
+                                        <h3 class="text-start article">2024 : retour sur la 31ᵉ édition</h3>
+                                        <a href="./article-2.html" class="no-underline">
+                                          <p>
+                                            Coup de cœur Professionnels
+                                            <br>Camille Besse, <em>Marianne</em>, 02/02/2024
+                                          </p>
+                                          <p class="fw-bold text-primary" style="font-size: 1rem;">
+                                            pour en savoir plus : cliquez ici
+                                        </p>
+                                        </a>
+                                      </div>
+                                      <div class="col-12 col-md-12 col-lg-6">
+                                        <a href="./article-2.html">
+                                          <img src="./images/articles/2 Besse le dessin, Marianne 2-02-2024.jpg" alt="img2" class="img-fluid">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Troisième élément du carrousel -->
+                                  <div class="carousel-item" data-bs-interval="10000">
+                                    <div class="row align-items-start justify-content-center">
+                                      <div class="caption col-12 col-md-12 col-lg-6">
+                                        <h3 class="text-start article">2024 : retour sur la 31ᵉ édition</h3>
+                                        <a href="./article-3.html" class="no-underline">
+                                          <p>
+                                            Trophée catégorie Étudiants
+                                            <br>Laure Ledoux, ESAC Cambrai
+                                          </p>
+                                          <p class="fw-bold text-primary" style="font-size: 1rem;">
+                                            pour en savoir plus : cliquez ici
+                                        </p>
+                                        </a>
+                                      </div>
+                                      <div class="col-12 col-md-12 col-lg-6">
+                                        <a href="./article-3.html">
+                                          <img src="./images/articles/3 Laure Ledoux le dessin.jpg" alt="img3" class="img-fluid">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Quatrième élément du carrousel (nouveau) -->
+                                  <div class="carousel-item" data-bs-interval="10000">
+                                    <div class="row align-items-start justify-content-center">
+                                      <div class="caption col-12 col-md-12 col-lg-6">
+                                        <h3 class="text-start article">2024 : retour sur la 31ᵉ édition</h3>
+                                        <a href="./article-4.html" class="no-underline">
+                                          <p>
+                                            Coup de cœur Étudiants
+                                            <br>Cyril Boivin, École Estienne,
+                                            <br>DNMADE Gravure
+                                          </p>
+                                          <p class="fw-bold text-primary" style="font-size: 1rem;">
+                                            pour en savoir plus : cliquez ici
+                                        </p>
+                                        </a>
+                                      </div>
+                                      <div class="col-12 col-md-12 col-lg-6">
+                                        <a href="./article-4.html">
+                                          <img src="./images/articles/4 Cyril Boivin le dessin.png" alt="img4" class="img-fluid">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <!-- Cinquième élément du carrousel (nouveau) -->
+                                  <div class="carousel-item" data-bs-interval="10000">
+                                    <div class="row align-items-start justify-content-center">
+                                      <div class="caption col-12 col-md-12 col-lg-6">
+                                        <h3 class="text-start article">2024 : retour sur la 31ᵉ édition</h3>
+                                        <a href="./article-5.html" class="no-underline">
+                                          <p>
+                                            « Prix auquel vous avez échappé » 
+                                            <br>sur le thème « On est ce qu’on mange »
+                                            <br>Hugo Glesaz
+                                          </p>
+                                          <p class="fw-bold text-primary" style="font-size: 1rem;">
+                                            pour en savoir plus : cliquez ici
+                                        </p>
+                                        </a>
+                                      </div>
+                                      <div class="col-12 col-md-12 col-lg-6">
+                                        <a href="./article-5.html">
+                                          <img src="./images/articles/5 Hugo Glesaz le dessin 2.png" alt="img5" class="img-fluid">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>                          
+                    </div>
+
+                    <!-- Colonne droite -->
+                    <div class="col-lg-2 col-md-4 d-none d-md-block sidebar-right">
+                        <img src="./images/32eme-quali.png" class="img-fluid" alt="Image Côté Droit">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer bg-custom text-center">
+          <div class="partenaires">
+              <div class="logo-container">
+                <div class="logo-slide">
+                    <img src="./images/logo_partenaire/LOGO-1.png"/>
+                    <img src="./images/logo_partenaire/LOGO-2.png"/>
+                    <img src="./images/logo_partenaire/LOGO-3.png"/>
+                    <img src="./images/logo_partenaire/LOGO-4.jpg"/>
+                    <img src="./images/logo_partenaire/LOGO-5.png"/>
+                    <img src="./images/logo_partenaire/LOGO-6.png"/>
+                    <img src="./images/logo_partenaire/LOGO-7.png"/>
+                    <img src="./images/logo_partenaire/LOGO-8.png"/>
+                    <img src="./images/logo_partenaire/LOGO-9.png"/>
+                    <img src="./images/logo_partenaire/LOGO-10.png"/>
+                    <img src="./images/logo_partenaire/LOGO-11.jpg"/>
+                    <img src="./images/logo_partenaire/LOGO-12.png"/>
+                    <img src="./images/logo_partenaire/LOGO-13.png"/>
+                    <img src="./images/logo_partenaire/LOGO-14.png"/>
+                    <img src="./images/logo_partenaire/LOGO-15.png"/>
+                    <img src="./images/logo_partenaire/LOGO-16.png"/>
+                    <img src="./images/logo_partenaire/LOGO-17.png"/>
+                    <img src="./images/logo_partenaire/LOGO-18.png"/>
+                    <img src="./images/logo_partenaire/LOGO-19.png"/>
+                    <img src="./images/logo_partenaire/LOGO-20.png"/>
+                    <img src="./images/logo_partenaire/LOGO-21.png"/> 
+                    <img src="./images/logo_partenaire/LOGO-22.png"/> 
+                    <img src="./images/logo_partenaire/LOGO-23.png"/> 
+                    <img src="./images/logo_partenaire/LOGO-24.png"/>  
+                </div>
+                <div class="logo-slide">
+                  <img src="./images/logo_partenaire/LOGO-1.png"/>
+                  <img src="./images/logo_partenaire/LOGO-2.png"/>
+                  <img src="./images/logo_partenaire/LOGO-3.png"/>
+                  <img src="./images/logo_partenaire/LOGO-4.jpg"/>
+                  <img src="./images/logo_partenaire/LOGO-5.png"/>
+                  <img src="./images/logo_partenaire/LOGO-6.png"/>
+                  <img src="./images/logo_partenaire/LOGO-7.png"/>
+                  <img src="./images/logo_partenaire/LOGO-8.png"/>
+                  <img src="./images/logo_partenaire/LOGO-9.png"/>
+                  <img src="./images/logo_partenaire/LOGO-10.png"/>
+                  <img src="./images/logo_partenaire/LOGO-11.jpg"/>
+                  <img src="./images/logo_partenaire/LOGO-12.png"/>
+                  <img src="./images/logo_partenaire/LOGO-13.png"/>
+                  <img src="./images/logo_partenaire/LOGO-14.png"/>
+                  <img src="./images/logo_partenaire/LOGO-15.png"/>
+                  <img src="./images/logo_partenaire/LOGO-16.png"/>
+                  <img src="./images/logo_partenaire/LOGO-17.png"/>
+                  <img src="./images/logo_partenaire/LOGO-18.png"/>
+                  <img src="./images/logo_partenaire/LOGO-19.png"/>
+                  <img src="./images/logo_partenaire/LOGO-20.png"/>
+                  <img src="./images/logo_partenaire/LOGO-21.png"/> 
+                  <img src="./images/logo_partenaire/LOGO-22.png"/> 
+                  <img src="./images/logo_partenaire/LOGO-23.png"/> 
+                  <img src="./images/logo_partenaire/LOGO-24.png"/>  
+              </div>
+            </div>  
+      </footer>
+    </div>
+    <!-- Inclusion des scripts Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+    document.querySelectorAll('a.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').substring(1); // Récupère l'ID de l'ancre
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                e.preventDefault();
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const elementPosition = targetElement.offsetTop;
+                const offsetPosition = elementPosition - navbarHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</html>
